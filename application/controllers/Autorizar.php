@@ -11,6 +11,12 @@ public function __construct(){
 
 }
 
+public function index(){
+    $this->load->view("login.php");
+  }
+  public function cargalogin(){
+    $this->load->view("login.php");
+  }
 public function user_logout(){
     $this->session->sess_destroy();
     redirect('autorizar', 'refresh');
