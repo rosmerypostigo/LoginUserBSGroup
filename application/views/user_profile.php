@@ -39,6 +39,14 @@ if(!$user_id){
             <td>Age</td>
             <td><?php echo $this->session->userdata('cumpleanios');  ?></td>
           </tr>
+                    <tr>
+            <td>Telefono</td>
+            <td><?php echo $this->session->userdata('user_telefono');  ?></td>
+          </tr>
+          <tr>
+            <td>Tipo Usuario</td>
+            <td><?php echo $this->session->userdata('tipo_usuario');  ?></td>
+          </tr>
     </div>
   </div>
 <a href="<?php echo base_url('autorizar/user_logout');?>" >  <button type="button" class="btn-primary">Logout</button></a>
